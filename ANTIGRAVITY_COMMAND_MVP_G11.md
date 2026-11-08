@@ -157,3 +157,26 @@ Ao finalizar, mostre:
 7. o que ainda precisa ser copiado para o Google Docs oficial.
 
 Não gaste tempo com Power BI, Canva, banco de dados, pipeline produtivo, autenticação, deploy ou integração real. Esses itens ficam no roadmap pós-challenge.
+
+## Template oficial da Rota 3 — requisitos exatos
+
+Trabalhe em uma cópia autorizada do template oficial:
+https://docs.google.com/document/d/1tNPwSv6YateSQ0gUa_kCHB0v10v5i2ALLW5VcjUGA5M/edit
+
+Não edite o template original. A cópia final precisa preencher:
+
+- Resumo Executivo;
+- Rota Zero: AI Canvas, mínimo de três casos, classificação por tipo de IA, supervisão humana;
+- Rota Zero: Matriz Esforço × Impacto, métricas de sucesso e plano de mudança;
+- Rota Zero: Política de IA Responsável, riscos e LGPD, comitê e auditoria;
+- Rota 3 obrigatória: três ou mais personas, prompt completo do sistema, sessão completa SBI e avaliação da eficácia;
+- Rota 3 opcional recomendada: métricas calculadas, hipóteses diagnósticas, recomendações e links/prints da análise;
+- anexo de evidências com artefato, descrição, link, print/captura e nota de uso.
+
+## Ferramentas e transparência
+
+Declare no relatório que o Antigravity foi uma ferramenta de execução técnica e documental permitida pela categoria “outra ferramenta” do enunciado. Declare também o uso do Google Docs/Drive, Colab/Python, Canva quando utilizado, Hub OS NEXUS, hub-os-guIA e NotebookLM. Não apresente o Hub OS como requisito do Challenge nem como substituto do ChatGPT/Gemini; ele é uma camada de governança, mentoria e QA.
+
+## Fontes e acesso
+
+Leia `SOURCE_ACCESS_PROTOCOL_G11.md`. Não presuma acesso automático ao Workspace, NotebookLM ou fontes privadas. Use apenas arquivos presentes no projeto, links abertos fornecidos pela CEO ou materiais explicitamente anexados. Se alguma fonte não estiver acessível, registre a limitação e não invente conteúdo.
