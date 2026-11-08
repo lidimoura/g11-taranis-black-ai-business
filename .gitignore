@@ -1,0 +1,10 @@
+# Dados locais do challenge — não versionar
+*.xlsx
+*.xls
+*.csv
+*.env
+.env*
+__pycache__/
+.ipynb_checkpoints/
+outputs/*
+!outputs/.gitkeep
