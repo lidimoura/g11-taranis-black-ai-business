@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>G11 — Taranis Black | AI for Business (Rota Zero + Rota 3 RH)</title>
+  <style>
+    :root {
+      --bg: #0b0f19;
+      --card: rgba(22, 30, 49, 0.85);
+      --border: rgba(139, 92, 246, 0.28);
+      --accent: #8b5cf6;
+      --accent-blue: #3b82f6;
+      --accent-green: #10b981;
+      --accent-amber: #f59e0b;
+      --accent-red: #ef4444;
+      --text: #f1f5f9;
+      --muted: #94a3b8;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      background: radial-gradient(circle at top right, #1e1b4b, #0b0f19 60%);
+      color: var(--text);
+      line-height: 1.6;
+      padding-bottom: 60px;
+    }
+    .container { max-width: 1160px; margin: 0 auto; padding: 0 24px; }
+    header {
+      padding: 48px 0 36px;
+      border-bottom: 1px solid var(--border);
+      background: rgba(11, 15, 25, 0.75);
+      backdrop-filter: blur(12px);
+    }
+    .badge-row { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 16px; }
+    .badge {
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      padding: 5px 12px;
+      border-radius: 999px;
+      background: rgba(139, 92, 246, 0.18);
+      border: 1px solid var(--accent);
+      color: #ddd6fe;
+    }
+    .badge.green { background: rgba(16, 185, 129, 0.16); border-color: var(--accent-green); color: #a7f3d0; }
+    .badge.blue { background: rgba(59, 130, 246, 0.16); border-color: var(--accent-blue); color: #bfdbfe; }
+    h1 { font-size: 2.3rem; font-weight: 800; margin-bottom: 12px; color: #ffffff; }
+    .subtitle { font-size: 1.08rem; color: var(--muted); max-width: 880px; }
+    .meta-bar {
+      margin-top: 20px;
+      font-size: 0.9rem;
+      color: #cbd5e1;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px;
+    }
+    section { margin-top: 40px; }
+    h2 {
+      font-size: 1.45rem;
+      margin-bottom: 18px;
+      padding-left: 12px;
+      border-left: 4px solid var(--accent);
+      color: #ffffff;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 24px;
+      margin-bottom: 20px;
+      box-shadow: 0 10px 28px rgba(0, 0, 0, 0.35);
+    }
+    .kpi-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 16px;
+      margin-bottom: 24px;
+    }
+    .kpi {
+      background: rgba(15, 23, 42, 0.9);
+      border: 1px solid rgba(148, 163, 184, 0.2);
+      border-radius: 12px;
+      padding: 18px;
+    }
+    .kpi .val { font-size: 1.9rem; font-weight: 800; color: #fff; margin: 4px 0; }
+    .kpi .val.red { color: #f87171; }
+    .kpi .val.amber { color: #fbbf24; }
+    .kpi .val.purple { color: #c084fc; }
+    .kpi .lbl { font-size: 0.82rem; text-transform: uppercase; color: var(--muted); font-weight: 600; }
+    .kpi .note { font-size: 0.8rem; color: #cbd5e1; }
+    .grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(460px, 1fr)); gap: 20px; }
+    .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 18px; }
+    table { width: 100%; border-collapse: collapse; margin-top: 10px; font-size: 0.92rem; }
+    th, td { padding: 11px 12px; text-align: left; border-bottom: 1px solid rgba(148, 163, 184, 0.16); }
+    th { background: rgba(139, 92, 246, 0.15); color: #e2e8f0; font-weight: 700; }
+    .chart-box {
+      background: #ffffff;
+      border-radius: 10px;
+      padding: 12px;
+      text-align: center;
+    }
+    .chart-box img { max-width: 100%; height: auto; border-radius: 6px; }
+    .dialogue {
+      background: rgba(15, 23, 42, 0.95);
+      border-left: 4px solid var(--accent-blue);
+      padding: 14px 18px;
+      border-radius: 8px;
+      margin: 12px 0;
+      font-size: 0.94rem;
+    }
+    .dialogue.persona { border-left-color: var(--accent-amber); }
+    .dialogue.good { border-left-color: var(--accent-green); }
+    ul { padding-left: 20px; }
+    li { margin-bottom: 6px; }
+    footer {
+      margin-top: 56px;
+      text-align: center;
+      font-size: 0.85rem;
+      color: var(--muted);
+      border-top: 1px solid var(--border);
+      padding-top: 24px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="badge-row">
+        <span class="badge">Challenge ONE G11 — AI for Business</span>
+        <span class="badge blue">Rota Zero + Rota 3 (RH & People Analytics)</span>
+        <span class="badge green">LGPD & Human-in-the-Loop</span>
+      </div>
+      <h1>Taranis Black — Fundação de IA Responsável & Simulador SBI</h1>
+      <p class="subtitle">
+        Diagnóstico agregado de People Analytics (Bronze → Prata → Ouro), priorização estratégica via AI Canvas e Simulador de Liderança no Modelo SBI (Situação-Comportamento-Impacto) para mitigação de conflitos e retenção nos primeiros 90 dias.
+      </p>
+      <div class="meta-bar">
+        <span><strong>Autora / Consultora:</strong> Lídi Moura (CEO Encontro d'Água Hub)</span>
+        <span><strong>Empresa Simulada:</strong> Taranis Black (R$ 48M | 280 colaboradores)</span>
+        <span><strong>Status:</strong> MVP Validado (Dados Sintéticos Anonimizados)</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section>
+      <h2>1. Resumo Executivo & Visão Sistêmica para a CEO</h2>
+      <div class="card">
+        <p style="margin-bottom: 12px;">
+          O crescimento de <strong>35% ao ano</strong> da Taranis Black gerou forte pressão sobre processos manuais legados (demora de 48h em cotações no ERP, 40% do tempo comercial em planilhas, 5 dias de atraso financeiro e falta de rastreio de fretes). Nossa análise comprova que <strong>as próprias lideranças intermediárias estão sobrecarregadas por esses sistemas legados</strong> e acabam transferindo tensão para quem lida diretamente com os clientes na ponta: <strong>Suporte ao Cliente (38,5% de turnover)</strong> e <strong>Comercial B2B (30,9% de turnover)</strong>.
+        </p>
+        <p>
+          <strong>Proposta Integrada:</strong> Priorizar imediatamente o <strong>Simulador de Liderança SBI</strong> (atacando os 40,6% de desligamentos por falha de comunicação/metas com líderes recém-promovidos), apoiado por <strong>Análise Assistida de Clima</strong> (monitorando sobrecarga operacional de 2,07/5) e <strong>Onboarding Inteligente 30-60-90 dias</strong>, sob estrita Política de IA Responsável e supervisão humana obrigatória.
+        </p>
+      </div>
+
+      <div class="kpi-grid">
+        <div class="kpi">
+          <div class="lbl">Turnover Anual Geral</div>
+          <div class="val red">22,8%</div>
+          <div class="note">64 desligados em 280 (22,9% na base detalhada)</div>
+        </div>
+        <div class="kpi">
+          <div class="lbl">Turnover Primeiros 90 Dias</div>
+          <div class="val red">23,4%</div>
+          <div class="note">Aba KPIs (~24% enunciado | 13 casos ≤90d na base)</div>
+        </div>
+        <div class="kpi">
+          <div class="lbl">Queda do eNPS Corporativo</div>
+          <div class="val amber">+62 → +28</div>
+          <div class="note">Crítico em Suporte (+08) e Comercial B2B (+18)</div>
+        </div>
+        <div class="kpi">
+          <div class="lbl">Causa Nº 1 de Saída (Entrevistas)</div>
+          <div class="val purple">40,6%</div>
+          <div class="note">Falta de clareza nas metas e comunicação c/ líder</div>
+        </div>
+        <div class="kpi">
+          <div class="lbl">Pesquisa de Clima (1 a 5)</div>
+          <div class="val amber">2,07 / 5</div>
+          <div class="note">Carga de Trabalho (2,07), Ferramentas (2,43), Liderança (3,07)</div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>2. Evidências Analíticas — People Analytics (Camada Ouro)</h2>
+      <div class="grid-2">
+        <div class="card chart-box">
+          <img src="../outputs/01_turnover_por_departamento.png" alt="Turnover por Departamento" />
+        </div>
+        <div class="card chart-box">
+          <img src="../outputs/03_motivos_desligamento_agregados.png" alt="Motivos de Desligamento" />
+        </div>
+        <div class="card chart-box">
+          <img src="../outputs/02_clima_dimensoes_agregadas.png" alt="Dimensões da Pesquisa de Clima" />
+        </div>
+        <div class="card chart-box">
+          <img src="../outputs/04_matriz_esforco_impacto.png" alt="Matriz Esforço x Impacto" />
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>3. Rota Zero — AI Canvas, Tipos de IA e Governança LGPD</h2>
+      <div class="grid-3">
+        <div class="card">
+          <h3 style="color:#a7f3d0; margin-bottom:8px;">1º Simulador de Liderança SBI (Prioridade Máxima)</h3>
+          <p><strong>Tipo de IA:</strong> IA Generativa (LLM Conversacional) + Rubrica Determinística.</p>
+          <p><strong>Valor:</strong> Academia segura para líderes recém-promovidos praticarem conversas difíceis com personas sintéticas antes da conversa real.</p>
+          <p><strong>HITL & LGPD:</strong> Zero PII; vedado para avaliação formal ou demissão; escalonamento humano ao BP de RH em casos sensíveis.</p>
+        </div>
+        <div class="card">
+          <h3 style="color:#bfdbfe; margin-bottom:8px;">2º Análise Assistida de Clima (Curto Prazo)</h3>
+          <p><strong>Tipo de IA:</strong> Híbrida — IA Tradicional/Estatística (Colab) + IA Generativa (NLP/Sentimento).</p>
+          <p><strong>Valor:</strong> Reduz em ~70% o tempo de consolidação qualitativa e evidencia gargalos de ERP/processos para a diretoria.</p>
+          <p><strong>HITL & LGPD:</strong> Regra <em>k-anonymity</em> (mín. 5 pessoas), remoção de Nome/Salário na Camada Prata e validação pelo analista de RH.</p>
+        </div>
+        <div class="card">
+          <h3 style="color:#ddd6fe; margin-bottom:8px;">3º Onboarding Inteligente 90d (Médio Prazo)</h3>
+          <p><strong>Tipo de IA:</strong> IA Generativa com RAG + Automação Tradicional por Regras.</p>
+          <p><strong>Valor:</strong> Guia novos colaboradores nos marcos de 30-60-90 dias sobre produtos NR-17 e playbooks, reduzindo turnover precoce.</p>
+          <p><strong>HITL & LGPD:</strong> Base documental curada pelo RH e rituais humanos insubstituíveis de 1:1 com o gestor.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>4. Rota 3 — Simulador de Feedbacks Difíceis (Modelo SBI)</h2>
+      <div class="card">
+        <p style="margin-bottom: 14px;"><strong>3 Personas Sintéticas Configuradas:</strong> (1) <strong>Lucas Andrade</strong> (Executivo Comercial B2B Sênior — bate metas mas não atualiza CRM e foi ríspido com colega culpando o ERP lento); (2) <strong>Marina Costa</strong> (Analista de Suporte Pleno &lt;90 dias — sobrecarregada por atrasos de frete sem rastreio, fechou tickets sem escalonar); (3) <strong>Rafael Mendes</strong> (Especialista de Expedição veterano — pulou checklist de mesas SmartDesk e ironizou líder novo).</p>
+        <div class="dialogue">
+          <strong>👤 1ª Tentativa do Gestor (Nota Rubrica SBI: 2,0 / 10,0):</strong><br/>
+          "Lucas, sua postura está insustentável. Você nunca preenche o CRM, acha que está acima das regras porque bate meta e foi arrogante com a Camila..."
+        </div>
+        <div class="dialogue persona">
+          <strong>🎭 Reação Defensiva de Lucas Andrade:</strong><br/>
+          "Arrogante? Trouxe R$ 420 mil no mês passado enquanto o ERP demora 48h para liberar orçamento! Quando digo que perco 4h copiando planilha, é a realidade..."
+        </div>
+        <div class="dialogue good">
+          <strong>👤 2ª Tentativa do Gestor Corrigida com SBI (Nota Rubrica SBI: 10,0 / 10,0):</strong><br/>
+          Reconhece a entrega comercial e a dor real do ERP legado, delimita a <strong>Situação</strong> (reunião de segunda às 09h), descreve o <strong>Comportamento observável</strong> (6 propostas sem atualização e a fala literal diante do time), explica o <strong>Impacto</strong> (atraso na previsão financeira/comissões e constrangimento na equipe) e abre <strong>Escuta Ativa + Acordo Prático</strong> (atualização macro até quinta às 17h30 e pedido de desculpas à colega).
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>5. Ecossistema de Ferramentas & Governança</h2>
+      <div class="card">
+        <table>
+          <thead>
+            <tr>
+              <th>Ferramenta / Camada</th>
+              <th>Papel Executado com Transparência no Projeto</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td><strong>Google Docs & Drive</strong></td><td>Repositório oficial do template da Rota 3, kit de dados sintéticos, textos exportados das aulas e entrega final.</td></tr>
+            <tr><td><strong>Google Colab / Python</strong></td><td>Pipeline auditável Bronze → Prata → Ouro (anonimização, KPIs e geração dos 4 gráficos executivos).</td></tr>
+            <tr><td><strong>Antigravity IDE</strong></td><td>Execução técnica, documental e QA dos entregáveis, testes do Simulador SBI e validação de conformidade.</td></tr>
+            <tr><td><strong>Manus AI</strong></td><td>Ambiente inicial de mentoria, organização de contexto e estruturação do protocolo por fases.</td></tr>
+            <tr><td><strong>Hub OS NEXUS & hub-os-guIA</strong></td><td>Camadas de governança arquitetural (LGPD, Tolerância Zero a segredos, HITL) e mentoria técnica/STAR desenvolvidas por Lídi Moura.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      G11 — Taranis Black | AI for Business • Desenvolvido sob governança ética por Lídi Moura • Dados 100% sintéticos para fins educacionais.
+    </div>
+  </footer>
+</body>
+</html>

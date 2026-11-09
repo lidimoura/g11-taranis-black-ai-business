@@ -138,3 +138,16 @@ Toda decisão relevante deve registrar data, evidência, alternativas, risco, re
 ## Governança de publicação
 
 Não publicar, enviar para a Alura, compartilhar externamente, mudar permissões do Drive, publicar o showcase ou alterar infraestrutura sem revisão explícita da CEO. O repositório permanece privado enquanto o projeto estiver em validação.
+
+
+---
+
+## DEVLOG — Registro de Execução e QA Final (08/11/2026)
+
+- **Fase 0 (Inventário e Acesso):** Verificação completa das fontes no GitHub e Google Drive (`readonly`), documentando o papel de Google Docs/Drive, Colab/Python, Antigravity, Manus AI, Hub OS NEXUS e hub-os-guIA, e aplicando a contingência oficial dos documentos de cursos exportados no Drive em substituição aos links web autenticados do NotebookLM.
+- **Fase 1 (Mapeamento do Template):** Mapeamento dos 21 campos exatos da Cópia de Trabalho da CEO (`1iJJCuZXFhak77p6Weirg4zp6UFpFhHxqaqFswUGZvAw`).
+- **Fase 2 (People Analytics):** Processamento determinístico das 3 abas de `04_Base_Colaboradores_People_Analytics.xlsx` fora do repositório, remoção de `Nome` e `Salário Mensal (R$)` na Camada Prata, reconciliação entre `22,8%`, `23,4%` e `~24%`, e geração dos gráficos `01` a `03` em `outputs/`.
+- **Fase 3 (Rota Zero):** Elaboração de `docs/AI_CANVAS_R0_R3.md`, `reports/02_politica_ia_responsavel_taranis_black.md`, `reports/03_plano_metricas_e_gestao_mudanca.md` e gráfico `04_matriz_esforco_impacto.png`, incorporando a visão sistêmica sobre o esgotamento das lideranças pelos sistemas legados.
+- **Fase 4 (Rota 3 — Simulador SBI):** Criação das 3 personas sintéticas (Lucas Andrade, Marina Costa e Rafael Mendes), System Prompt completo (`simulator/prompt_simulador_sbi.md`) e sessão completa de teste (`simulator/README.md`) com evolução de `2,0/10` para `10,0/10`.
+- **Fase 5 e 6 (Google Docs e Showcase):** Atualização *in-place* da Cópia de Trabalho da CEO no Google Docs com todas as tabelas preenchidas e as 4 imagens incorporadas nativamente, além da página `showcase/index.html`.
+- **Fase 7 (QA Final):** Auditoria automatizada confirmando JSON válido no notebook, zero arquivos `.xlsx`/`.env` no repositório, zero vazamento de PII/nomes reais da planilha, zero tokens/segredos e 100% dos campos do template oficial preenchidos.
