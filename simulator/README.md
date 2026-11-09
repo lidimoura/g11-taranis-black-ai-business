@@ -118,3 +118,11 @@ Abaixo está o registro integral da sessão de teste executada com a **Persona 1
 1. **Simulação Multi-Turno Prolongada Antes do Veredito:** Na versão 1.0 do MVP, o mentor avalia logo após a primeira fala do gestor para agilizar o microlearning (sessões de 15–20 min). Em uma versão 2.0, adicionaremos um modo opcional de **"Diálogo Contínuo (3 a 4 turnos)"**, onde a persona retruca primeiro e o gestor precisa manter a calma em tempo real antes de receber a tabela de avaliação.
 2. **Calibração por Nível de Maturidade e Canal:** Incluir parâmetros no prompt para simular feedbacks especificamente via **chamada de vídeo (regime Remoto/Híbrido, onde o turnover é de ~26,5%)** versus presencial, treinando também a leitura de sinais não verbais e mensagens escritas assíncronas.
 3. **Integração com Exemplos Positivos (SBI de Reconhecimento):** Expandir o prompt para treinar também **feedbacks de reforço positivo no modelo SBI**, combatendo a percepção cultural de que o líder só chama o colaborador para apontar falhas.
+
+---
+
+## 4. Execução Interativa e Governança Multi-LLM
+
+Para executar o Simulador SBI em produção ou laboratório com camadas adicionais de governança técnica:
+- **Google Colab Interativo (com Filtro Anti-PII Python):** [`notebooks/02_simulador_sbi_demo_governanca.ipynb`](../notebooks/02_simulador_sbi_demo_governanca.ipynb)
+- **Guia de Criação Guiada e Governança Multi-LLM (Gemini Gems, Custom GPTs, Claude Projects):** [`docs/CATALOGO_PROMPTS_POR_ETAPA_G11.md`](../docs/CATALOGO_PROMPTS_POR_ETAPA_G11.md)
